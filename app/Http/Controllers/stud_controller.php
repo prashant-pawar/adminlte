@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Dotenv\Result\Success;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
+use App\stud;
 
 class stud_controller extends Controller
 {
@@ -42,7 +44,7 @@ class stud_controller extends Controller
             "name"=>"required",
             "enrollment_no"=>"required",
             "roll_no"=>"required",
-            "mobile"=>"required",
+            "mobile"=>"required|max:10",
             "email"=>"required",
             "city"=>"required"
 

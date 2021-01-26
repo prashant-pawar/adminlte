@@ -26,3 +26,4 @@ Route::get('/table', function () {
 });
 */
 Route::resource('student', 'stud_controller');
+Route::resource('city', 'CityController');

@@ -8,4 +8,5 @@ class City extends Model
 {
     protected $table='city_models';
     protected $fillable=['city'];
+    public $timestamps=false;
 }
